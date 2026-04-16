@@ -1,0 +1,154 @@
+{
+  "total_rows": 840,
+  "statistical_results": {
+    "overall": {
+      "chi2_gender": {
+        "stat": 66.54195132093184,
+        "p": 3.553029907168939e-15
+      },
+      "ttest_age": {
+        "stat": -3.693086019448664,
+        "p": 0.00023590551061204758
+      },
+      "fisher_it": {
+        "stat": 0.6105659206392304,
+        "p": 0.019119848186520058
+      }
+    },
+    "per_provider": {
+      "Groq": {
+        "chi2_gender_p": 2.7654378289157316e-05,
+        "ttest_age_p": 0.23652316258378195,
+        "fisher_it_p": 0.49622678240182455
+      },
+      "HuggingFace": {
+        "chi2_gender_p": 2.3189326486871323e-07,
+        "ttest_age_p": 0.000961609367174249,
+        "fisher_it_p": 0.4658650933082519
+      },
+      "OpenRouter": {
+        "chi2_gender_p": 1.0,
+        "ttest_age_p": 0.042051914040857175,
+        "fisher_it_p": 0.009895433683669267
+      },
+      "Cerebras": {
+        "chi2_gender_p": 4.173128031079408e-06,
+        "ttest_age_p": 0.007170515350423021,
+        "fisher_it_p": 1.0083001738148018e-05
+      },
+      "NVIDIA": {
+        "chi2_gender_p": 5.203514608910387e-14,
+        "ttest_age_p": 4.7173887294373545e-05,
+        "fisher_it_p": 1.5849810428264574e-05
+      }
+    }
+  },
+  "consistency_results": {
+    "Groq - Llama 3.1 8B": {
+      "provider": "Groq",
+      "consistency_pct": 85.0
+    },
+    "Groq - Llama 3.3 70B": {
+      "provider": "Groq",
+      "consistency_pct": 100.0
+    },
+    "Groq - gpt": {
+      "provider": "Groq",
+      "consistency_pct": 0
+    },
+    "llama3.1": {
+      "provider": "HuggingFace",
+      "consistency_pct": 65.0
+    },
+    "qwen2.5": {
+      "provider": "HuggingFace",
+      "consistency_pct": 100.0
+    },
+    "gemma2": {
+      "provider": "HuggingFace",
+      "consistency_pct": 10.0
+    },
+    "OR - Llama 3.1 8B": {
+      "provider": "OpenRouter",
+      "consistency_pct": 90.0
+    },
+    "OR - Qwen2.5 7B": {
+      "provider": "OpenRouter",
+      "consistency_pct": 45.0
+    },
+    "OR - GPT OSS 120B": {
+      "provider": "OpenRouter",
+      "consistency_pct": 25.0
+    },
+    "CB - Llama 3.1 8B": {
+      "provider": "Cerebras",
+      "consistency_pct": 90.0
+    },
+    "Qwen": {
+      "provider": "Cerebras",
+      "consistency_pct": 80.0
+    },
+    "NV - Llama 3.1 70B": {
+      "provider": "NVIDIA",
+      "consistency_pct": 70.0
+    },
+    "NV - Llama 3.3 70B": {
+      "provider": "NVIDIA",
+      "consistency_pct": 100.0
+    },
+    "NV - Nemotron Super": {
+      "provider": "NVIDIA",
+      "consistency_pct": 80.0
+    }
+  },
+  "qualitative_overall": {
+    "tech unfamiliarity": 79.66101694915254,
+    "age mentioned": 72.88135593220339,
+    "personality trait": 71.1864406779661,
+    "work domain": 62.71186440677966,
+    "low education": 57.6271186440678,
+    "gender mentioned": 25.423728813559322
+  },
+  "qualitative_by_provider": {
+    "Groq": {
+      "age mentioned": 66.66666666666666,
+      "low education": 66.66666666666666,
+      "tech unfamiliarity": 100.0,
+      "personality trait": 44.44444444444444,
+      "gender mentioned": 0.0,
+      "work domain": 22.22222222222222
+    },
+    "HuggingFace": {
+      "age mentioned": 85.71428571428571,
+      "low education": 64.28571428571429,
+      "tech unfamiliarity": 71.42857142857143,
+      "personality trait": 64.28571428571429,
+      "gender mentioned": 14.285714285714285,
+      "work domain": 71.42857142857143
+    },
+    "OpenRouter": {
+      "age mentioned": 70.0,
+      "low education": 40.0,
+      "tech unfamiliarity": 100.0,
+      "personality trait": 70.0,
+      "gender mentioned": 40.0,
+      "work domain": 70.0
+    },
+    "Cerebras": {
+      "age mentioned": 77.77777777777779,
+      "low education": 22.22222222222222,
+      "tech unfamiliarity": 77.77777777777779,
+      "personality trait": 100.0,
+      "gender mentioned": 11.11111111111111,
+      "work domain": 66.66666666666666
+    },
+    "NVIDIA": {
+      "age mentioned": 66.66666666666666,
+      "low education": 53.333333333333336,
+      "tech unfamiliarity": 60.0,
+      "personality trait": 46.666666666666664,
+      "gender mentioned": 33.33333333333333,
+      "work domain": 73.33333333333333
+    }
+  }
+}
